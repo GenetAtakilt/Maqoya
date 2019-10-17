@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/location_image">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:gravity="center"
+        android:layout_marginTop="127dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:textSize="27sp"
+        android:textColor="@color/white"
+        app:fontFamily="Mali"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/home_location"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:fontFamily="Mali"
+        android:layout_margin="82dp"
+        android:layout_marginTop="86dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        style="@style/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45.96dp"
+        android:layout_marginRight="45.96dp"
+        android:layout_marginTop="56dp"
+        android:hint="@string/home"
+        android:inputType="textPersonName" />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="79dp"
+        style="@style/button" />
+
+
+</LinearLayout>
