@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
-        android:gravity="center"
-        android:layout_marginTop="127dp"
+        android:gravity="start"
+        android:layout_marginTop="115dp"
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
         android:textSize="27sp"
@@ -23,11 +23,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/home_location"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textColor="@color/white"
         app:fontFamily="Mali"
-        android:layout_margin="82dp"
-        android:layout_marginTop="86dp"/>
+
+        android:layout_marginTop="35dp"/>
 
     <EditText
         android:id="@+id/editText"
@@ -36,9 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="45.96dp"
         android:layout_marginRight="45.96dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="40dp"
         android:hint="@string/home"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:autofillHints="userName" />
 
 
 
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="46dp"
         android:layout_marginRight="46dp"
-        android:layout_marginTop="79dp"
+        android:layout_marginTop="40dp"
         style="@style/button" />
 
 

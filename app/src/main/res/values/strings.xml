@@ -3,7 +3,7 @@
     <string name="project"></string>
     <string name="motto">WORRY LESS ABOUT YOUR KIDS</string>
     <string name="home_location_2">live to start </string>
-    <string name="home_location">Please set up where you live to start</string>
+    <string name="home_location">Please set up where you \n live to start</string>
     <string name="welcome">Welcome to Maqoya</string>
     <string name="home">Home location</string>
 </resources>
