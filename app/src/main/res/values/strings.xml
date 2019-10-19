@@ -6,4 +6,7 @@
     <string name="home_location">Please set up where you \n live to start</string>
     <string name="welcome">Welcome to Maqoya</string>
     <string name="home">Home location</string>
+    <string name="office_only">you are only left with \n your office</string>
+    <string name="almost_done">your almost done</string>
+    <string name="office_location">office location</string>
 </resources>

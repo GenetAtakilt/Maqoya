@@ -4,7 +4,10 @@
     <color name="colorPrimaryDark">@color/dark_blue</color>
     <color name="colorAccent">#D3CEA6</color>
     <color name="dark_blue">#0E4C92</color>
-
     <color name="white">@android:color/white</color>
+    <color name="black_color">@color/black</color>
+    <color name="black">#000000</color>
+    <color name="silver">@color/silver_light</color>
+    <color name="silver_light">#b6b7b9</color>
 </resources>
 

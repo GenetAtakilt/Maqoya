@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_shape">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Email"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Password" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp">
+
+                   <CheckBox
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="Remember Me"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:text="Forget Password?"/>
+
+               </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/register"
+                    style="@style/button.login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/silver"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center"
+                        android:text="OR"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/silver" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/register_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    style="@style/button.login_google"/>
+
+                <Button
+                    android:id="@+id/register_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    style="@style/button.login_facebook"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/newToMaqoya"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="I am new to Maqoya."
+                        android:layout_marginLeft="30dp"/>
+                    <TextView
+                        android:id="@+id/registerTo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Register"
+                        android:textColor="@color/dark_blue"
+                        android:layout_marginRight="40dp"
+                        android:gravity="end"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

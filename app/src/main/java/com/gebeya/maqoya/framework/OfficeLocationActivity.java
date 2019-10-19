@@ -1,5 +1,4 @@
 package com.gebeya.maqoya.framework;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,25 +8,22 @@ import androidx.annotation.Nullable;
 
 import com.gebeya.maqoya.framework.base.BaseActivity;
 
-public class LocationActivity extends BaseActivity {
+public class OfficeLocationActivity extends BaseActivity {
 
-
-    Button next;
+    Button start;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location_setup);
+        setContentView(R.layout.office_location_setup);
 
-        next = findViewById(R.id.next_button);
-        next.setOnClickListener(new View.OnClickListener() {
+        start = findViewById(R.id.start_button);
+        start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(LocationActivity.this,OfficeLocationActivity.class);
+                Intent intent = new Intent(OfficeLocationActivity.this,RegisterActivity.class);
                 startActivity(intent);
-
-
             }
         });
 

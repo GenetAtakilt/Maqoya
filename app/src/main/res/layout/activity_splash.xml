@@ -9,20 +9,20 @@
 
     <ImageView
         android:id="@+id/logo_id"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/ic_white_logo" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/motto_id"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/logo_id"
-        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="9dp"
         android:text="@string/motto"
-        android:textSize="15sp"
         android:textColor="@color/white"
-        app:fontFamily="Mali"/>
+        android:textSize="15sp"
+        app:fontFamily="Mali" />
 
 </RelativeLayout>
