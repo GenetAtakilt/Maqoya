@@ -7,10 +7,10 @@
     <LinearLayout
 
         android:id="@+id/linearLayout1"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/dark_blue">
+        android:background="@color/dark_blue"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,9 +19,9 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
-                android:layout_gravity="center"
                 app:srcCompat="@drawable/logo" />
 
         </LinearLayout>
@@ -44,25 +44,26 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <ImageButton
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/addPhoto"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="50dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/add_photo"
                     android:gravity="center"
-                    app:srcCompat="@drawable/ic_add_a_photo_24px">
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/silver_light"
+                    android:src="@drawable/register_add_photo_icon">
 
-                </ImageButton>
+                </de.hdodenhof.circleimageview.CircleImageView>
 
                 <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:hint="Email"/>
+                    android:hint="Email" />
 
                 <EditText
                     android:id="@+id/password"
@@ -89,15 +90,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp">
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
 
                     <View
                         android:layout_width="150dp"
                         android:layout_height="2dp"
                         android:layout_gravity="center_vertical"
-                        android:background="@color/silver"/>
+                        android:background="@color/silver" />
 
 
                     <TextView
@@ -120,17 +121,17 @@
 
                 <Button
                     android:id="@+id/register_google"
+                    style="@style/button.register_google"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    style="@style/button.register_google"/>
+                    android:layout_marginBottom="20dp" />
 
                 <Button
                     android:id="@+id/register_facebook"
+                    style="@style/button.register_facebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    style="@style/button.register_facebook"/>
+                    android:layout_marginBottom="20dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -141,20 +142,20 @@
                     <TextView
                         android:id="@+id/maqoyaAccount"
                         android:layout_width="wrap_content"
-                        android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="Already have an account?"
-                        android:layout_marginLeft="30dp"/>
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:text="Already have an account?" />
 
                     <TextView
                         android:id="@+id/loginTo"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Login"
-                        android:textColor="@color/dark_blue"
                         android:layout_marginRight="40dp"
-                        android:gravity="end"/>
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Login"
+                        android:textColor="@color/dark_blue" />
                 </LinearLayout>
 
             </LinearLayout>
