@@ -1,37 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
-    <LinearLayout
-
-        android:id="@+id/linearLayout1"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/dark_blue">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/logo" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/layout_shape">
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_shape">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,13 +17,23 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
+                <ImageButton
+                    android:id="@+id/addPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/add_photo"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/ic_add_a_photo_24px">
 
+                </ImageButton>
 
                 <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="100dp"
                     android:layout_marginBottom="5dp"
                     android:hint="Email"/>
 
@@ -61,36 +44,17 @@
                     android:layout_margin="5dp"
                     android:hint="Password" />
 
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:orientation="horizontal"
-                   android:layout_marginTop="20dp"
-                   android:layout_marginBottom="20dp">
-
-                   <CheckBox
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"/>
-
-                   <TextView
-                       android:layout_width="wrap_content"
-                       android:layout_weight="1"
-                       android:layout_height="wrap_content"
-                       android:text="Remember Me"/>
-
-                   <TextView
-                       android:layout_width="wrap_content"
-                       android:layout_weight="1"
-                       android:layout_height="wrap_content"
-                       android:gravity="center"
-                       android:text="Forget Password?"/>
-
-               </LinearLayout>
+                <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Confirm Password" />
 
 
                 <Button
                     android:id="@+id/register"
-                    style="@style/button.login"
+                    style="@style/button.register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp" />
@@ -132,14 +96,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    style="@style/button.login_google"/>
+                    style="@style/button.register_google"/>
 
                 <Button
                     android:id="@+id/register_facebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    style="@style/button.login_facebook"/>
+                    style="@style/button.register_facebook"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -148,18 +112,19 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/newToMaqoya"
+                        android:id="@+id/maqoyaAccount"
                         android:layout_width="wrap_content"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:text="I am new to Maqoya."
+                        android:text="Already have an account?"
                         android:layout_marginLeft="30dp"/>
+
                     <TextView
-                        android:id="@+id/registerTo"
+                        android:id="@+id/loginTo"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Register"
+                        android:text="Login"
                         android:textColor="@color/dark_blue"
                         android:layout_marginRight="40dp"
                         android:gravity="end"/>
@@ -171,5 +136,5 @@
         </LinearLayout>
 
 
-    </LinearLayout>
-</ScrollView>
+
+
