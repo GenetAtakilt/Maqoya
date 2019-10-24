@@ -16,7 +16,7 @@ public class RegisterActivity extends BaseActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.fragment_register);
+    setContentView(R.layout.activity_register);
 
     login = findViewById(R.id.loginTo);
     login.setOnClickListener(new View.OnClickListener() {

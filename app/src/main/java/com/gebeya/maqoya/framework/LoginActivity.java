@@ -17,7 +17,7 @@ public class LoginActivity extends BaseActivity {
         TextView register;
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_login);
+        setContentView(R.layout.activity_login);
 
         register = findViewById(R.id.registerTo);
         register.setOnClickListener(new View.OnClickListener() {

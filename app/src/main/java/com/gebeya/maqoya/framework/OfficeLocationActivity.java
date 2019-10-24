@@ -22,7 +22,7 @@ public class OfficeLocationActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(OfficeLocationActivity.this,AccountActivity.class);
+                Intent intent = new Intent(OfficeLocationActivity.this,RegisterActivity.class);
                 startActivity(intent);
             }
         });
