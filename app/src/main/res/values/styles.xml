@@ -37,6 +37,8 @@
        <item name="android:textColor">@color/black</item>
    </style>
 
+
+
     <style name="button.register">
         <item name="android:text">Register</item>
     </style>
