@@ -9,4 +9,10 @@
     <string name="office_only">you are only left with \n your office</string>
     <string name="almost_done">your almost done</string>
     <string name="office_location">office location</string>
+    <string name="title_activity_main1">MainActivity1</string>
+    <string name="title_location">Near you</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_child">My child</string>
+    <string name="title_setting">Setting</string>
+
 </resources>

@@ -98,7 +98,7 @@
 
 
                         <Button
-                            android:id="@+id/register"
+                            android:id="@+id/login"
                             style="@style/button.login"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
