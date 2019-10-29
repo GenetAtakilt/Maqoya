@@ -19,8 +19,8 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.gebeya.maqoya.framework.ui.notifications.NotificationsFragment"
+        android:name="com.gebeya.maqoya.framework.ui.notifications.ChildFragment"
         android:label="@string/title_child"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_child" />
 
 </navigation>
