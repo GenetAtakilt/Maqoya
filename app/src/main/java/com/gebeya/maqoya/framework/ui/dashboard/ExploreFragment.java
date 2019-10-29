@@ -32,7 +32,7 @@ public class ExploreFragment extends Fragment {
         recyclerView = view.findViewById(R.id.explore_recycler);
         ExploreAdapter exploreAdapter = new ExploreAdapter(getContext(),dayCareData);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
         recyclerView.setAdapter(exploreAdapter);
 
 
@@ -62,6 +62,9 @@ public class ExploreFragment extends Fragment {
 
         dayCareData = new ArrayList<>();
 
+        dayCareData.add(new DayCareData(1,R.drawable.daycare,"Ethiopia","bola","23"));
+        dayCareData.add(new DayCareData(1,R.drawable.daycare,"Ethiopia","bola","23"));
+        dayCareData.add(new DayCareData(1,R.drawable.daycare,"Ethiopia","bola","23"));
         dayCareData.add(new DayCareData(1,R.drawable.daycare,"Ethiopia","bola","23"));
         dayCareData.add(new DayCareData(1,R.drawable.daycare,"Ethiopia","bola","23"));
         dayCareData.add(new DayCareData(1,R.drawable.daycare,"Ethiopia","bola","23"));
