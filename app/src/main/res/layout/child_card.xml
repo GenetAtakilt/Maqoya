@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="30dp"
         app:cardCornerRadius="10dp">
 
@@ -36,8 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="160dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/childName"
@@ -45,29 +44,32 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/dark_blue"
-                android:typeface="sans"
+                android:typeface="serif"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
                 />
 
             <TextView
-                android:id="@+id/carename"
+                android:id="@+id/careName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/dark_blue"
-                android:typeface="sans"
+                android:layout_marginRight="10dp"
+                android:typeface="serif"
                 android:gravity="center"
                 />
 
             <TextView
-                android:id="@+id/hourspent"
+                android:id="@+id/hourSpent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/dark_blue"
-                android:typeface="sans"
+                android:typeface="serif"
+                android:layout_marginRight="10dp"
                 android:gravity="center"
                 />
 

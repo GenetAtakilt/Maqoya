@@ -12,6 +12,10 @@
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
+    <style name="input.edit">
+        <item name="android:textSize">24sp</item>
+    </style>
+
     <style name="input">
         <item name="android:textSize">15sp</item>
         <item name="android:textColorHint">@color/white</item>

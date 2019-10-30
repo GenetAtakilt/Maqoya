@@ -59,8 +59,8 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildViewHol
             super(itemView);
 
             childName = itemView.findViewById(R.id.childName);
-            careName = itemView.findViewById(R.id.carename);
-            hourSpent = itemView.findViewById(R.id.hourspent);
+            careName = itemView.findViewById(R.id.careName);
+            hourSpent = itemView.findViewById(R.id.hourSpent);
             childPicture = itemView.findViewById(R.id.childphoto);
         }
     }
