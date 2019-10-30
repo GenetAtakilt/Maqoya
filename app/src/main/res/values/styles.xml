@@ -81,5 +81,10 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="button.dialog">
+        <item name="android:text"> Save </item>
+
+    </style>
+
 
 </resources>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
         app:cardCornerRadius="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"/>
+            android:orientation="horizontal" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/childphoto"
@@ -27,8 +27,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            app:civ_border_width="1dp"
-            app:civ_border_color="@color/silver_light">
+            app:civ_border_color="@color/silver_light"
+            app:civ_border_width="1dp">
 
         </de.hdodenhof.circleimageview.CircleImageView>
 
@@ -42,36 +42,33 @@
                 android:id="@+id/childName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:textColor="@color/dark_blue"
-                android:typeface="serif"
-                android:textStyle="bold"
-                android:gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
-                />
+                android:gravity="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
             <TextView
                 android:id="@+id/careName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:textColor="@color/dark_blue"
                 android:layout_marginRight="10dp"
-                android:typeface="serif"
                 android:gravity="center"
-                />
+                android:textColor="@color/dark_blue"
+                android:textSize="20sp"
+                android:typeface="serif" />
 
             <TextView
                 android:id="@+id/hourSpent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:textColor="@color/dark_blue"
-                android:typeface="serif"
                 android:layout_marginRight="10dp"
                 android:gravity="center"
-                />
+                android:textColor="@color/dark_blue"
+                android:textSize="20sp"
+                android:typeface="serif" />
 
         </LinearLayout>
 
