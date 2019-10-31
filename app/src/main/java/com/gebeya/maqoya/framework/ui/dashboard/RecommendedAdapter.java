@@ -13,30 +13,30 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.gebeya.maqoya.framework.R;
 
 import java.util.List;
+import java.util.zip.Inflater;
 
-public class ExploreAdapter extends RecyclerView.Adapter<ExploreAdapter.ExploreViewHolder> {
+public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.RecommendedViewHolder> {
 
     private Context mCtx;
+    private List<DayCareData> dayCareDataList;
 
-    public ExploreAdapter(Context mCtx, List<DayCareData> dayCareDataList) {
+    public RecommendedAdapter(Context mCtx, List<DayCareData> dayCareDataList) {
         this.mCtx = mCtx;
         this.dayCareDataList = dayCareDataList;
     }
 
-    private List<DayCareData> dayCareDataList;
-
     @NonNull
     @Override
-    public ExploreViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RecommendedViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.explore_card, null);
 
-        return new ExploreViewHolder(view);
+        View view  = inflater.inflate(R.layout.explore_card,null);
+        return new RecommendedViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ExploreViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecommendedViewHolder holder, int position) {
 
         DayCareData dayCareData = dayCareDataList.get(position);
 
@@ -52,20 +52,19 @@ public class ExploreAdapter extends RecyclerView.Adapter<ExploreAdapter.ExploreV
         return dayCareDataList.size();
     }
 
-
-    class ExploreViewHolder extends RecyclerView.ViewHolder
+    class RecommendedViewHolder extends RecyclerView.ViewHolder
     {
         TextView name, location, availableSlot;
         ImageView picture;
 
-
-        public ExploreViewHolder(@NonNull View itemView) {
+        public RecommendedViewHolder(@NonNull View itemView) {
             super(itemView);
 
             name = itemView.findViewById(R.id.dayCareName);
             location = itemView.findViewById(R.id.dayCarePlace);
             availableSlot = itemView.findViewById(R.id.availableSlot);
             picture = itemView.findViewById(R.id.dayCareImage);
+
         }
     }
 }

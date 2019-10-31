@@ -29,11 +29,17 @@ public class ExploreFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_explore,container,false);
 
 
-        recyclerView = view.findViewById(R.id.explore_recycler);
-        ExploreAdapter exploreAdapter = new ExploreAdapter(getContext(),dayCareData);
+        recyclerView = view.findViewById(R.id.topRated_recycler);
+        TopRatedAdapter topRatedAdapter = new TopRatedAdapter(getContext(),dayCareData);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
-        recyclerView.setAdapter(exploreAdapter);
+        recyclerView.setAdapter(topRatedAdapter);
+
+        recyclerView = view.findViewById(R.id.recommended_recycler);
+        RecommendedAdapter recommendedAdapter = new RecommendedAdapter(getContext(),dayCareData);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
+        recyclerView.setAdapter(recommendedAdapter);
 
 
 
