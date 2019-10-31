@@ -1,5 +1,6 @@
 package com.gebeya.maqoya.framework.ui.notifications;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.gebeya.maqoya.framework.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +26,9 @@ public class ChildFragment extends Fragment {
     RecyclerView recyclerView;
 
     List<ChildData> childData;
+
+    FloatingActionButton addChildInfo;
+
 
     //private NotificationsViewModel notificationsViewModel;
 
@@ -36,6 +41,16 @@ public class ChildFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(childAdapter);
+
+        addChildInfo = view.findViewById(R.id.floatingActionButton);
+        addChildInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+              MyChildDialog myChildDialog = new MyChildDialog();
+              myChildDialog.show(getFragmentManager()," MyChildDialog");
+            }
+        });
 
         return view;
 
@@ -59,6 +74,7 @@ public class ChildFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         childData = new ArrayList<>();
 
