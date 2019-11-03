@@ -17,6 +17,19 @@ import java.util.List;
 public class TopRatedAdapter extends RecyclerView.Adapter<TopRatedAdapter.ExploreViewHolder> {
 
     private Context mCtx;
+    private onItemClickListener mListener;
+
+
+    public interface onItemClickListener
+    {
+        void onItemClick(int position);
+    }
+
+    public void setonItemClickListener(onItemClickListener listener)
+    {
+        mListener = listener;
+    }
+
 
     public TopRatedAdapter(Context mCtx, List<DayCareData> dayCareDataList) {
         this.mCtx = mCtx;
@@ -32,7 +45,7 @@ public class TopRatedAdapter extends RecyclerView.Adapter<TopRatedAdapter.Explor
         LayoutInflater inflater = LayoutInflater.from(mCtx);
         View view = inflater.inflate(R.layout.explore_card, null);
 
-        return new ExploreViewHolder(view);
+        return new ExploreViewHolder(view, mListener);
     }
 
     @Override
@@ -59,13 +72,32 @@ public class TopRatedAdapter extends RecyclerView.Adapter<TopRatedAdapter.Explor
         ImageView picture;
 
 
-        public ExploreViewHolder(@NonNull View itemView) {
+        public ExploreViewHolder(@NonNull View itemView,final onItemClickListener listener) {
             super(itemView);
 
             name = itemView.findViewById(R.id.dayCareName);
             location = itemView.findViewById(R.id.dayCarePlace);
             availableSlot = itemView.findViewById(R.id.availableSlot);
             picture = itemView.findViewById(R.id.dayCareImage);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                  if (listener != null)
+                  {
+
+                      int position = getAdapterPosition();
+
+                      if (position != RecyclerView.NO_POSITION)
+                      {
+                          listener.onItemClick(position);
+
+                      }
+
+                  }
+                }
+            });
         }
     }
 }

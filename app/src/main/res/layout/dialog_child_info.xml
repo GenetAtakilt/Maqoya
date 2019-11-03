@@ -51,33 +51,23 @@
 
             <CheckBox
                 android:id="@+id/checkBoy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/boy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/dark_blue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="Boy"
-                />
+                android:textColor="@color/dark_blue"/>
+
+
 
             <CheckBox
                 android:id="@+id/checkGirl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"/>
-
-            <TextView
-                android:id="@+id/girl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:gravity="center"
-                android:textColor="@color/dark_blue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="Girl"
-                />
+                android:textColor="@color/dark_blue"/>
+
+
 
         </LinearLayout>
 
@@ -118,37 +108,26 @@
 
             <CheckBox
                 android:id="@+id/checkAllergies"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/Allergies"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:textColor="@color/dark_blue"
                 android:text="Allergies" />
 
+
             <CheckBox
                 android:id="@+id/checkMedcin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"/>
-
-            <TextView
-                android:id="@+id/Medication"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:textColor="@color/dark_blue"
-                android:text="Medication"
-                />
-
+                android:text="Medication"/>
 
         </LinearLayout>
 
 
         <Button
+            android:id="@+id/child_info_save"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="40dp"
             android:layout_width="match_parent"

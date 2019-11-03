@@ -1,5 +1,6 @@
 package com.gebeya.maqoya.framework.ui.dashboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +8,9 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,11 +19,14 @@ import com.gebeya.maqoya.framework.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExploreFragment extends Fragment {
+public class ExploreFragment extends Fragment  {
 
     List<DayCareData> dayCareData;
 
     RecyclerView recyclerView;
+
+    CardView cardView;
+
 
    // private DashboardViewModel dashboardViewModel;
 
@@ -35,11 +41,40 @@ public class ExploreFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
         recyclerView.setAdapter(topRatedAdapter);
 
+        topRatedAdapter.setonItemClickListener(new TopRatedAdapter.onItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+
+
+                cardView = view.findViewById(R.id.card);
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        DayCareDetial dayCareDetial = new DayCareDetial();
+                        FragmentManager manager =  getFragmentManager();
+                        manager.beginTransaction()
+                                .replace(R.id.nav_host_fragment,dayCareDetial)
+                                .addToBackStack(null)
+                                .commit();
+
+
+                    }
+                });
+
+
+            }
+        });
+
         recyclerView = view.findViewById(R.id.recommended_recycler);
         RecommendedAdapter recommendedAdapter = new RecommendedAdapter(getContext(),dayCareData);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
         recyclerView.setAdapter(recommendedAdapter);
+
+
+
+
 
 
 

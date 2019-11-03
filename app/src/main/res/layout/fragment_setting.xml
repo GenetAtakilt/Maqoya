@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/activitybar_shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:typeface="sans"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:fontFamily="Mail"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/settingToolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="45dp"
+                android:layout_marginTop="40dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/silver_light"
+                    android:src="@drawable/register_add_photo_icon">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/parentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="start"
+                    android:text="Parent Name"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_blue"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view"
+                android:background="@color/silver_light"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="50dp"        >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_account_circle_black_24dp"
+                        />
+
+                    <TextView
+
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/parentProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:text="Profile"
+                        android:textColor="@color/dark_blue"
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_photo_library_black_24dp"
+                        />
+
+                    <TextView
+
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:text="Gallery"
+                        android:textColor="@color/dark_blue"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_insert_drive_file_black_24dp"
+                        />
+
+                    <TextView
+
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/Report"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:text="Report"
+                        android:textColor="@color/dark_blue"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_language_black_24dp"
+                        />
+
+                    <TextView
+
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/language"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:text="Language"
+                        android:textColor="@color/dark_blue"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_notifications_black_24dp"
+                        />
+
+                    <TextView
+
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:text="Notification"
+                        android:textColor="@color/dark_blue"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

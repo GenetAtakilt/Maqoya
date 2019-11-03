@@ -3,24 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_nearYou">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_nearYou"
         android:name="com.gebeya.maqoya.framework.ui.home.HomeFragment"
         android:label="@string/title_location"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_explore"
         android:name="com.gebeya.maqoya.framework.ui.dashboard.ExploreFragment"
         android:label="@string/title_explore"
         tools:layout="@layout/fragment_explore" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_myChild"
         android:name="com.gebeya.maqoya.framework.ui.notifications.ChildFragment"
         android:label="@string/title_child"
         tools:layout="@layout/fragment_child" />
+
+
 
 </navigation>
