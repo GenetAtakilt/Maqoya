@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.register;
+package com.gebeya.maqoya.framework.models;
 
 import com.google.gson.annotations.SerializedName;
 

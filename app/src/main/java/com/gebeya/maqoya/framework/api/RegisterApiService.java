@@ -1,6 +1,7 @@
-package com.gebeya.maqoya.framework.register;
+package com.gebeya.maqoya.framework.api;
 
-import okhttp3.ResponseBody;
+import com.gebeya.maqoya.framework.models.DefultResponse;
+
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;

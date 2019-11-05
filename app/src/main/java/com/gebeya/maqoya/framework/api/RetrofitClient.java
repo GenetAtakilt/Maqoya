@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.register;
+package com.gebeya.maqoya.framework.api;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

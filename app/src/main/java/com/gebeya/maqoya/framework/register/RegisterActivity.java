@@ -11,14 +11,13 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import com.gebeya.maqoya.framework.LoginActivity;
+import com.gebeya.maqoya.framework.api.RetrofitClient;
+import com.gebeya.maqoya.framework.login.LoginActivity;
 import com.gebeya.maqoya.framework.MainActivity1;
 import com.gebeya.maqoya.framework.R;
 import com.gebeya.maqoya.framework.base.BaseActivity;
+import com.gebeya.maqoya.framework.models.DefultResponse;
 
-import java.io.IOException;
-
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
