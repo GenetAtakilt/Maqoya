@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework;
+package com.gebeya.maqoya.framework.register;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,14 +7,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import com.gebeya.maqoya.framework.LoginActivity;
+import com.gebeya.maqoya.framework.R;
 import com.gebeya.maqoya.framework.base.BaseActivity;
+
+import java.io.IOException;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class RegisterActivity extends BaseActivity implements View.OnClickListener {
 
-  EditText editTextEmail, editTextPassword, editTextConfirmPassword;
+  EditText editTextName, editTextEmail, editTextPassword, editTextConfirmPassword;
   Button register;
   TextView login;
 
@@ -23,6 +33,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_register);
 
+    editTextName = findViewById(R.id.name);
     editTextEmail = findViewById(R.id.email);
     editTextPassword = findViewById(R.id.password);
     editTextConfirmPassword = findViewById(R.id.confirm_password);
@@ -39,6 +50,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
   private void parentRegistration()
   {
+    String name  = editTextName.getText().toString().trim();
     String email = editTextEmail.getText().toString().trim();
     String password = editTextPassword.getText().toString().trim();
     String confirmPassword = editTextConfirmPassword.getText().toString().trim();
@@ -89,11 +101,36 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         return;
     }
 
+    Call<ResponseBody> responseBodyCall = RetrofitClient
+            .getRetrofitClient()
+            .registerApiService()
+            .registerUser(name,email,password,confirmPassword);
+
+    responseBodyCall.enqueue(new Callback<ResponseBody>() {
+      @Override
+      public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+
+        try {
+          String s = response.body().string();
+          Toast.makeText(RegisterActivity.this, s, Toast.LENGTH_LONG).show();
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
+      }
+
+      @Override
+      public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+        Toast.makeText(RegisterActivity.this,t.getMessage(),Toast.LENGTH_LONG).show();
+
+      }
+    });
+
   }
 
   private void login()
   {
-      Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+      Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
       startActivity(intent);
   }
 
