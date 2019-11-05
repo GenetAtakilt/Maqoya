@@ -10,7 +10,7 @@ public interface RegisterApiService {
 
     @FormUrlEncoded
     @POST("parents/register")
-    Call<ResponseBody> registerUser (
+    Call<DefultResponse> registerUser (
             @Field("name")  String name,
             @Field("email") String email,
             @Field("password") String password,
