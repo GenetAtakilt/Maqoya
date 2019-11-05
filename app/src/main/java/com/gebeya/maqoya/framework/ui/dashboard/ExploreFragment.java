@@ -1,10 +1,12 @@
 package com.gebeya.maqoya.framework.ui.dashboard;
 
+import android.app.Notification;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.gebeya.maqoya.framework.R;
+import com.gebeya.maqoya.framework.ui.notfi.NotificationFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +29,8 @@ public class ExploreFragment extends Fragment  {
     RecyclerView recyclerView;
 
     CardView cardView;
+
+    ImageView notification;
 
 
    // private DashboardViewModel dashboardViewModel;
@@ -41,6 +46,7 @@ public class ExploreFragment extends Fragment  {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
         recyclerView.setAdapter(topRatedAdapter);
 
+        //  toprated cardview onclick to be modified
         topRatedAdapter.setonItemClickListener(new TopRatedAdapter.onItemClickListener() {
             @Override
             public void onItemClick(int position) {
@@ -74,8 +80,20 @@ public class ExploreFragment extends Fragment  {
 
 
 
+// notfication on click to be modified
+     notification = view.findViewById(R.id.notfication);
+     notification.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
 
-
+             NotificationFragment notificationFragment = new NotificationFragment();
+             getFragmentManager()
+                     .beginTransaction()
+                     .replace(R.id.nav_host_fragment,notificationFragment)
+                     .addToBackStack(null)
+                     .commit();
+         }
+     });
 
 
 

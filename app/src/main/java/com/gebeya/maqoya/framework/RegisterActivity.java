@@ -33,14 +33,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     register.setOnClickListener(this);
     login.setOnClickListener(this);
 
-//    login.setOnClickListener(new View.OnClickListener() {
-//      @Override
-//      public void onClick(View v) {
-//
-//        Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
-//        startActivity(intent);
-//      }
-//    });
+
 
   }
 
@@ -65,9 +58,44 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
       return;
     }
 
+    if (password.isEmpty())
+    {
+     editTextPassword.setError("Password is required");
+     editTextPassword.requestFocus();
+        return;
+    }
+
+    if (password.length() < 6)
+
+    {
+        editTextPassword.setError("Password should be atleast 6 character long");
+        editTextPassword.requestFocus();
+        return;
+
+    }
+
+    if (confirmPassword.isEmpty())
+    {
+      editTextConfirmPassword.setError("Password is required");
+      editTextConfirmPassword.requestFocus();
+        return;
+    }
+
+    if (confirmPassword.length() < 6)
+
+    {
+        editTextConfirmPassword.setError("Password is required");
+        editTextConfirmPassword.requestFocus();
+        return;
+    }
+
   }
 
-
+  private void login()
+  {
+      Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+      startActivity(intent);
+  }
 
   @Override
   public void onClick(View v) {
@@ -80,6 +108,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         break;
 
       case  R.id.loginTo:
+          login();
         break;
     }
 
