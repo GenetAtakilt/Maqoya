@@ -34,7 +34,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginBottom="10dp"
-                    app:srcCompat="@drawable/ic_notifications_black_24dp" />
+                    app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
 
 
                 <TextView
@@ -42,8 +42,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="My Children"
-                    android:textColor="@color/black"
+                    android:text="DayCare Name"
+                    android:textColor="@color/white"
                     android:typeface="sans"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -67,6 +67,7 @@
 
 
     </LinearLayout>
+
 
 
     <LinearLayout

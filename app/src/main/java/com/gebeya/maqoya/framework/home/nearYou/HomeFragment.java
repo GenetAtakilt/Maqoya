@@ -24,21 +24,6 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
 
-       home = view.findViewById(R.id.near);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                DayCareDetial dayCareDetial = new DayCareDetial();
-                FragmentManager manager =  getFragmentManager();
-                manager.beginTransaction()
-                        .replace(R.id.nav_host_fragment,dayCareDetial)
-                        .addToBackStack(null)
-                        .commit();
-
-
-            }
-        });
 
 
         return view;

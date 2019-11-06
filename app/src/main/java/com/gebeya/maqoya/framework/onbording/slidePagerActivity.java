@@ -1,7 +1,10 @@
 package com.gebeya.maqoya.framework.onbording;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -9,7 +12,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.gebeya.maqoya.framework.MainActivity1;
 import com.gebeya.maqoya.framework.R;
+import com.gebeya.maqoya.framework.login.LoginActivity;
+import com.gebeya.maqoya.framework.register.RegisterActivity;
 
 public class slidePagerActivity extends AppCompatActivity {
     ViewPager mSlideViewPager;
@@ -17,6 +23,9 @@ public class slidePagerActivity extends AppCompatActivity {
 
     private TextView[] mdots;
     private SliderAdater sliderAdater;
+    private Button next;
+
+    private int mCuurentPage;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,11 +34,28 @@ public class slidePagerActivity extends AppCompatActivity {
 
         mSlideViewPager = findViewById(R.id.slideViewPager);
         mDotLayout = findViewById(R.id.dots);
+        next = findViewById(R.id.next_button);
 
         sliderAdater = new SliderAdater(this);
         mSlideViewPager.setAdapter(sliderAdater);
         addDotsIndicater(0);
         mSlideViewPager.addOnPageChangeListener(viewListener);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mSlideViewPager.setCurrentItem(mCuurentPage + 1);
+
+            }
+        });
+    }
+
+
+    private void login()
+    {
+        Intent intent = new Intent(slidePagerActivity.this, RegisterActivity.class);
+        startActivity(intent);
     }
 
     public void addDotsIndicater(int position)
@@ -64,6 +90,27 @@ public class slidePagerActivity extends AppCompatActivity {
         @Override
         public void onPageSelected(int position) {
                    addDotsIndicater(position);
+                   mCuurentPage = position;
+
+                   if (position == 0)
+                   {
+                       next.setEnabled(true);
+                       next.setText("Next");
+                   }
+
+                   else if (position == mdots.length -1)
+                   {
+                       next.setText("Finish");
+                       login();
+
+                   }
+
+                   else
+                   {
+
+                       next.setEnabled(true);
+                       next.setText("Next");
+                   }
 
         }
 

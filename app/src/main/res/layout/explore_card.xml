@@ -24,11 +24,19 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp">
 
-            <ImageView
-                android:id="@+id/dayCareImage"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/daycare" />
+                android:background="@drawable/button_shape"
+                >
+
+                <ImageView
+                    android:id="@+id/dayCareImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/daycare" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/dayCareName"

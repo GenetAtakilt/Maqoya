@@ -74,14 +74,14 @@ public class ChildFragment extends Fragment {
 
         childData = new ArrayList<>();
 
-        childData.add(new ChildData(1,R.drawable.register_add_photo_icon,"Jane","selamdaycare","3 hour"));
+        childData.add(new ChildData(1,R.drawable.baby,"Jane","selamdaycare","3 hour"));
 
-        childData.add(new ChildData(1,R.drawable.add_photo,"Jane","selamdaycare","3 hour"));
+        childData.add(new ChildData(1,R.drawable.baby,"Jane","selamdaycare","3 hour"));
 
-        childData.add(new ChildData(1,R.drawable.add_photo,"Jane","selamdaycare","3 hour"));
-        childData.add(new ChildData(1,R.drawable.register_add_photo_icon,"Jane","selamdaycare","3 hour"));
-        childData.add(new ChildData(1,R.drawable.register_add_photo_icon,"Jane","selamdaycare","3 hour"));
+        childData.add(new ChildData(1,R.drawable.baby,"Jane","selamdaycare","3 hour"));
+        childData.add(new ChildData(1,R.drawable.baby,"Jane","selamdaycare","3 hour"));
+        childData.add(new ChildData(1,R.drawable.baby,"Jane","selamdaycare","3 hour"));
 
-        childData.add(new ChildData(1,R.drawable.add_photo,"Jane","selamdaycare","3 hour"));
+        childData.add(new ChildData(1,R.drawable.baby,"Jane","selamdaycare","3 hour"));
     }
 }

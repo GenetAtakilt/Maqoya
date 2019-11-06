@@ -37,10 +37,10 @@ public class SliderAdater extends PagerAdapter {
 
     public String[] title =
             {
-                "maoya",
-                    "welcome",
+                "Discover daycares",
+                    "Discover daycares",
 
-                    "bnbsnb"
+                    "Discover daycares"
 
             };
 
@@ -48,9 +48,9 @@ public class SliderAdater extends PagerAdapter {
 
     public String[] slideDescription =
             {
-               "bvvbvbvgvhm",
-                    "bvbbbbb",
-                    "nvncnvncv"
+               "Explore daycares in addis Ababa \n or find the ones around \n you to put your children in",
+                    "Explore daycares in addis Ababa \n or find the ones around \n you to put your children in",
+                    "Explore daycares in addis Ababa \n or find the ones around \n you to put your children in"
 
             };
     @Override
