@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.ui.dashboard;
+package com.gebeya.maqoya.framework.home.explore;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.gebeya.maqoya.framework.R;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
 public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.RecommendedViewHolder> {
 

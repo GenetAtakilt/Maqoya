@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.ui.dashboard;
+package com.gebeya.maqoya.framework.home.explore;
 
 public class DayCareData {
 

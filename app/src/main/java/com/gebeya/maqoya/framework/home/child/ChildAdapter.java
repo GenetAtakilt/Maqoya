@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.ui.notifications;
+package com.gebeya.maqoya.framework.home.child;
 
 import android.content.Context;
 import android.view.LayoutInflater;

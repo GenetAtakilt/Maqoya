@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.ui.notifications;
+package com.gebeya.maqoya.framework.home.setting;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,18 +7,17 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
 
 import com.gebeya.maqoya.framework.R;
 
-public class MyChildDialog extends DialogFragment {
+public class SettingFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.dialog_child_info,container,false);
-
+        View view = inflater.inflate(R.layout.fragment_setting,container,false);
         return view;
     }
 }

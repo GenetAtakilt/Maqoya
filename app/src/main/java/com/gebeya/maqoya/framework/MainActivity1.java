@@ -2,25 +2,18 @@ package com.gebeya.maqoya.framework;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 
-import com.gebeya.maqoya.framework.ui.dashboard.DayCareDetial;
-import com.gebeya.maqoya.framework.ui.dashboard.ExploreFragment;
-import com.gebeya.maqoya.framework.ui.home.HomeFragment;
-import com.gebeya.maqoya.framework.ui.notifications.ChildFragment;
-import com.gebeya.maqoya.framework.ui.setting.SettingFragment;
+import com.gebeya.maqoya.framework.home.explore.ExploreFragment;
+import com.gebeya.maqoya.framework.home.nearYou.HomeFragment;
+import com.gebeya.maqoya.framework.home.child.ChildFragment;
+import com.gebeya.maqoya.framework.home.setting.SettingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity1 extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 

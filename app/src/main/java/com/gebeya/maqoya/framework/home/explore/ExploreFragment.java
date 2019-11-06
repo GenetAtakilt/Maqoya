@@ -1,7 +1,5 @@
-package com.gebeya.maqoya.framework.ui.dashboard;
+package com.gebeya.maqoya.framework.home.explore;
 
-import android.app.Notification;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.gebeya.maqoya.framework.R;
-import com.gebeya.maqoya.framework.ui.notfi.NotificationFragment;
+import com.gebeya.maqoya.framework.home.notfication.NotificationFragment;
 
 import java.util.ArrayList;
 import java.util.List;

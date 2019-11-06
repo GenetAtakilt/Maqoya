@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.ui.notfi;
+package com.gebeya.maqoya.framework.home.notfication;
 
 public class NotficationData {
 

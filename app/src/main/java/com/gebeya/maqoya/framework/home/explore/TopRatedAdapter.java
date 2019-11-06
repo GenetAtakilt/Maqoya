@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.ui.dashboard;
+package com.gebeya.maqoya.framework.home.explore;
 
 import android.content.Context;
 import android.view.LayoutInflater;

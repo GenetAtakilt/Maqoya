@@ -1,4 +1,4 @@
-package com.gebeya.maqoya.framework.ui.notfi;
+package com.gebeya.maqoya.framework.home.notfication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.gebeya.maqoya.framework.R;
-import com.gebeya.maqoya.framework.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
