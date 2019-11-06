@@ -103,6 +103,12 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     }
 
+    private void login()
+    {
+        Intent intent = new Intent(LoginActivity.this, MainActivity1.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onClick(View v) {
 
@@ -111,6 +117,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             case R.id.login:
 
                 userLogin();
+                login();
                 break;
 
             case  R.id.registerTo:

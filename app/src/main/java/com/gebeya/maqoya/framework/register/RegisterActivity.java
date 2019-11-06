@@ -101,41 +101,41 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         return;
     }
 
-    Call<DefultResponse> responseBodyCall = RetrofitClient
-            .getRetrofitClient()
-            .registerApiService()
-            .registerUser(name,email,password,confirmPassword);
-
-
-    responseBodyCall.enqueue(new Callback<DefultResponse>() {
-      @Override
-      public void onResponse(Call<DefultResponse> call, Response<DefultResponse> response) {
-
-        if (response.code() == 200)
-        {
-
-         DefultResponse defultResponse = response.body();
-
-         Toast.makeText(RegisterActivity.this,"Registered successfully",Toast.LENGTH_LONG).show();
-
-          Intent intent = new Intent(RegisterActivity.this,MainActivity1.class);
-          startActivity(intent);
-        }
-
-        else if (response.code() == 400)
-
-        {
-          Toast.makeText(RegisterActivity.this,"user already exist",Toast.LENGTH_LONG).show();
-
-        }
-
-      }
-
-      @Override
-      public void onFailure(Call<DefultResponse> call, Throwable t) {
-
-      }
-    });
+//    Call<DefultResponse> responseBodyCall = RetrofitClient
+//            .getRetrofitClient()
+//            .registerApiService()
+//            .registerUser(name,email,password,confirmPassword);
+//
+//
+//    responseBodyCall.enqueue(new Callback<DefultResponse>() {
+//      @Override
+//      public void onResponse(Call<DefultResponse> call, Response<DefultResponse> response) {
+//
+//        if (response.code() == 200)
+//        {
+//
+//         DefultResponse defultResponse = response.body();
+//
+//         Toast.makeText(RegisterActivity.this,"Registered successfully",Toast.LENGTH_LONG).show();
+//
+//          Intent intent = new Intent(RegisterActivity.this,MainActivity1.class);
+//          startActivity(intent);
+//        }
+//
+//        else if (response.code() == 400)
+//
+//        {
+//          Toast.makeText(RegisterActivity.this,"user already exist",Toast.LENGTH_LONG).show();
+//
+//        }
+//
+//      }
+//
+//      @Override
+//      public void onFailure(Call<DefultResponse> call, Throwable t) {
+//
+//      }
+//    });
 
   }
 
@@ -152,7 +152,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     {
       case R.id.register:
 
-        parentRegistration();
+        //parentRegistration();
         break;
 
       case  R.id.loginTo:
