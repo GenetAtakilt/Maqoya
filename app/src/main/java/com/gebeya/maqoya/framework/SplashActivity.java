@@ -7,6 +7,7 @@ import android.os.Handler;
 import androidx.annotation.Nullable;
 
 import com.gebeya.maqoya.framework.base.BaseActivity;
+import com.gebeya.maqoya.framework.onbording.slidePagerActivity;
 
 public class SplashActivity extends BaseActivity {
 
@@ -21,7 +22,7 @@ public class SplashActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this,LocationActivity.class);
+                Intent intent = new Intent(SplashActivity.this, slidePagerActivity.class);
                 startActivity(intent);
                 finish();
             }
