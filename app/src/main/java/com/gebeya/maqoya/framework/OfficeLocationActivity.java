@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 
 import com.gebeya.maqoya.framework.base.BaseActivity;
-import com.gebeya.maqoya.framework.register.RegisterActivity;
+import com.gebeya.maqoya.framework.screens.register.RegisterActivity;
 
 public class OfficeLocationActivity extends BaseActivity {
 

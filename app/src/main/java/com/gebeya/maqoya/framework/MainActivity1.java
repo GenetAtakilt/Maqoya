@@ -4,10 +4,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.gebeya.maqoya.framework.home.explore.ExploreFragment;
-import com.gebeya.maqoya.framework.home.nearYou.HomeFragment;
-import com.gebeya.maqoya.framework.home.child.ChildFragment;
-import com.gebeya.maqoya.framework.home.setting.SettingFragment;
+import com.gebeya.maqoya.framework.screens.home.explore.ExploreFragment;
+import com.gebeya.maqoya.framework.screens.home.nearYou.HomeFragment;
+import com.gebeya.maqoya.framework.screens.home.child.ChildFragment;
+import com.gebeya.maqoya.framework.screens.home.setting.SettingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;

@@ -7,7 +7,7 @@ import android.os.Handler;
 import androidx.annotation.Nullable;
 
 import com.gebeya.maqoya.framework.base.BaseActivity;
-import com.gebeya.maqoya.framework.onbording.slidePagerActivity;
+import com.gebeya.maqoya.framework.screens.onbording.slidePagerActivity;
 
 public class SplashActivity extends BaseActivity {
 

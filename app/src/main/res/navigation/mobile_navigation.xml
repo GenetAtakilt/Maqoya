@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_nearYou"
-        android:name="com.gebeya.maqoya.framework.home.nearYou.HomeFragment"
+        android:name="com.gebeya.maqoya.framework.screens.home.nearYou.HomeFragment"
         android:label="@string/title_location"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_explore"
-        android:name="com.gebeya.maqoya.framework.home.explore.ExploreFragment"
+        android:name="com.gebeya.maqoya.framework.screens.home.explore.ExploreFragment"
         android:label="@string/title_explore"
         tools:layout="@layout/fragment_explore" />
 
     <fragment
         android:id="@+id/navigation_myChild"
-        android:name="com.gebeya.maqoya.framework.home.child.ChildFragment"
+        android:name="com.gebeya.maqoya.framework.screens.home.child.ChildFragment"
         android:label="@string/title_child"
         tools:layout="@layout/fragment_child" />
 

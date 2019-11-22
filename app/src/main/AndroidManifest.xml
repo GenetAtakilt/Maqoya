@@ -24,9 +24,9 @@
         <activity android:name=".LocationActivity" />
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".OfficeLocationActivity" />
-        <activity android:name=".register.RegisterActivity" />
-        <activity android:name=".login.LoginActivity" />
-        <activity android:name=".onbording.slidePagerActivity"/>
+        <activity android:name=".screens.register.RegisterActivity" />
+        <activity android:name=".screens.login.LoginActivity" />
+        <activity android:name=".screens.onbording.slidePagerActivity"/>
 
 
 
