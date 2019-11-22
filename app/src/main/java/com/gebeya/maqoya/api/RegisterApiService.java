@@ -1,7 +1,9 @@
 package com.gebeya.maqoya.api;
 
 
-import com.maqoya.data.models.DefultResponse;
+
+
+import com.example.api.models.DefultResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Field;
